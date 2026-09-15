@@ -1,7 +1,8 @@
 # Word Default Switcher
 
 带中文界面的 Windows 文档默认打开程序切换工具。检测八种文件格式，尝试批量设为 Microsoft Word，并保存操作记录、独立复查结果。
-![Uploading image.png…]()
+<img width="2308" height="1703" alt="image" src="https://github.com/user-attachments/assets/a7de7e77-bbb8-4853-9847-fea176435828" />
+
 
 ## 使用
 
