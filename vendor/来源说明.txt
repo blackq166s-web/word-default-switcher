@@ -1,0 +1,16 @@
+PS-SFTA 1.2.0
+来源：https://github.com/DanysysTeam/PS-SFTA
+固定提交：22a32292e576afc976a1167d92b50741ef523066
+原始文件：https://raw.githubusercontent.com/DanysysTeam/PS-SFTA/22a32292e576afc976a1167d92b50741ef523066/SFTA.ps1
+许可证：上游 README 和脚本声明 MIT，版权归 Danysys (2022)。
+
+本地调整：
+使用当前进程 WindowsIdentity 获取 SID，避免本地账号和域账号重名。
+修正系统字符串未找到时的越界处理。
+不调用通知偏好写入函数，避免改动关联提醒设置。
+移除删除键辅助函数中未关闭且无用的句柄打开操作。
+
+仅调用 Set-FTA，范围限制为八种用户指定格式，不使用注册新程序、移除程序、图标设置或协议关联功能。
+通过修改当前用户 UserChoice 及其 Hash 实现设置，不是微软官方支持的设置接口。
+不会关闭系统保护驱动；系统不接受设置时如实报告失败。
+工具离线运行，不会下载或执行在线更新。

@@ -1,0 +1,16 @@
+# Runtime reports may contain machine names, account names and local paths.
+检测记录/
+**/检测记录/
+WordDefaultReports/
+*.log
+*.zip
+*.png
+*.jpg
+*.jpeg
+*.reg
+*.xml
+!tests/fixtures/*.xml
+.vs/
+.vscode/
+Thumbs.db
+Desktop.ini
