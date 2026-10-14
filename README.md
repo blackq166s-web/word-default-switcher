@@ -1,6 +1,8 @@
 # WPS 一键优化与 Word 默认打开工具
 
 当前版本：**v2.3.0-beta.1（测试版）**。
+<img width="1885" height="1455" alt="image" src="https://github.com/user-attachments/assets/a0a9e479-3e7b-4308-8b8d-700dd49bac2c" />
+
 
 ## 使用
 
