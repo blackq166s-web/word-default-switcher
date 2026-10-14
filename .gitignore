@@ -14,3 +14,6 @@ WordDefaultReports/
 .vscode/
 Thumbs.db
 Desktop.ini
+
+# Retired launchers kept locally, never shipped.
+*.disabled

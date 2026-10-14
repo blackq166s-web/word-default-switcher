@@ -1,4 +1,4 @@
-PS-SFTA 1.2.0
+﻿PS-SFTA 1.2.0
 来源：https://github.com/DanysysTeam/PS-SFTA
 固定提交：22a32292e576afc976a1167d92b50741ef523066
 原始文件：https://raw.githubusercontent.com/DanysysTeam/PS-SFTA/22a32292e576afc976a1167d92b50741ef523066/SFTA.ps1
@@ -14,3 +14,14 @@ PS-SFTA 1.2.0
 通过修改当前用户 UserChoice 及其 Hash 实现设置，不是微软官方支持的设置接口。
 不会关闭系统保护驱动；系统不接受设置时如实报告失败。
 工具离线运行，不会下载或执行在线更新。
+
+
+Win11 新机制组件 SFTA-Latest.ps1（2026-10-14，本地测试）
+来源：https://github.com/ComoEstaisAmigos/PS-SFTA
+上游版本：2.0.1
+下载原文件 SHA256：76251738E4F41A52F0B40C16F88042E07C8B1942D15171C5C7173170A0838264
+许可证：MIT，原始版权及完整条款保留在脚本顶部。
+本地精简：仅保留托管哈希算法及新关联读写；移除系统 DLL 内部函数扫描/调用、关闭 UCPD、协议设置、注册程序及关联提醒修改。
+路由：HashVersion=0 使用原组件；HashVersion=1 使用新组件；未知版本停止。新算法须通过本机已有记录校验，无校验样本也停止。
+实测：本机 26200.9457 算法只读校验通过，但 .docx 实际写入被拒绝，仍为 WPS；不能视为已支持该系统的一键修改。
+本地组件 SHA256：78C6FDFFA9D9060133342276AC089769833322725C383A2CB0B216E429FF2A95
